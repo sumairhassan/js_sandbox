@@ -105,7 +105,7 @@ const val2= 6;
 //const sum = val1+val2;
 const sum = Number(val1+val2);
 console.log(sum);
-console.log(typeof sum); */
+console.log(typeof sum); 
 
 // Numbers & Math Object
 num1 = 2;
@@ -132,4 +132,107 @@ val = Math.random();
 
 val = Math.floor(Math.random() * 20 + 1);
 
+console.log(val); 
+
+// String method and concatenation.
+
+const firstname= 'Sumair';
+const lastname= 'Hassan';
+const age = 29;
+const str = 'Hello, My name is Sumair';
+const tags = 'web design, web development, programming'
+
+let val;
+
+val = firstname+lastname;
+
+//Concatenation
+val = firstname + ' ' +lastname;
+
+//Append
+val = 'Hassan ';
+val += 'Sumair';
+
+val = 'My name is ' + firstname + ' and I am ' + age + ' years';
+
+// Escaping
+val = 'That\'s awesome';
+
+// Length
+val = firstname.length;
+
+//concat()
+val = firstname.concat(' ', lastname);
+
+//Change case
+val = firstname.toUpperCase();
+val = lastname.toLowerCase();
+
+val = firstname[0];
+
+//indexOf()
+val = firstname.indexOf('m');
+
+// charAt()
+val = firstname.charAt('5')
+
+// Get last char
+val = firstname.charAt(firstname.length - 1);
+
+// substring()
+val = firstname.substring(0,4);
+
+//slice()
+val = firstname.slice(0,4);
+val = firstname.slice(-3);
+
+//split()
+val = str.split(' ');
+val = tags.split(',');
+
+//replace()
+val = str.replace('Sumair', 'Hassan');
+
+//includes()
+val = str.includes('foo');
+
+console.log(val); 
+
+// Template literals
+
+const name = 'Sumair';
+const age = 29;
+const job = 'Technical Writer';
+const city = 'Oslo';
+let html;
+//with es6 template string
+html = `
+ <ul>
+    <li>Name: ${name}</li>
+    <li>Age: ${age}</li>
+    <li>Job: ${job}</li>
+    <li>City: ${city}</li>
+ </ul>
+`;
+document.body.innerHTML = html; */
+
+// Arrays & Arrays Method
+//create some arrays
+const numbers = [34,56,78,34,68];
+const numbers2 = new Array(22,3,33,44,55,66);
+const fruit = ['Apples', 'Banana', 'Orange', 'Pear'];
+const mixed = [22, 'Hello', true, undefined, null, {a:1, b:1}, new Date()];
+
+//Get array length
+val = numbers.length;
+// Check if is array
+val = Array.isArray(numbers);
+// Get single value
+val = numbers[2];
+// insert into array
+numbers[2] = 100;
+// Find index of value
+val = numbers.indexOf(56);
+
+console.log(numbers);
 console.log(val);
